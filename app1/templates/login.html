@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            Login
+        </title>
+    </head>
+    <body>
+        <form action="" method="POST">
+
+            {{form.as_p}}
+            {% csrf_token %}
+            <button type="submit">Login</button>
+
+            <br><br>
+            Haven't registered yet? 
+            <a href="{% url 'register' %}">
+            Click here
+            </a>
+        </form>
+    </body>
+</html>

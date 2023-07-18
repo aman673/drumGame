@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>
+            Sign up
+        </title>
+    </head>
+    <body>
+        <form action="" method="POST">
+
+            {{user_form.as_p}}
+            {{customer_form.as_p}}
+            {% csrf_token %}
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
